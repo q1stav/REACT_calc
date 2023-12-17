@@ -1,0 +1,77 @@
+.app {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	color: black;
+}
+
+.calc {
+	position: absolute;
+	background-color: #587e89;
+	height: 350px;
+	width: 300px;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	border: 5px solid black;
+	border-radius: 25px;
+}
+
+.buttonPanel {
+	height: 90px;
+	width: 90%;
+	display: grid;
+	grid-template-areas:
+		'button button button button button'
+		'button button button button button';
+}
+
+.operantPanel {
+	height: 75px;
+}
+.display {
+	margin: 20px;
+	border: 2px solid black;
+	border-radius: 15px;
+	color: black;
+	background: lightblue;
+	height: 60px;
+	width: 90%;
+	text-align: center;
+	font-size: 45px;
+}
+
+.displayResult {
+	margin: 20px;
+	border: 2px solid black;
+	border-radius: 15px;
+	color: green;
+	background: lightblue;
+	height: 60px;
+	width: 90%;
+	text-align: center;
+	font-size: 45px;
+}
+
+.button {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.button:hover {
+	filter: brightness(150%);
+}
+.operand {
+	height: 70px;
+	width: 70px;
+	border-radius: 15px;
+	background-color: orange;
+	font-size: 35px;
+	cursor: pointer;
+}
+.operand:hover {
+	filter: brightness(150%);
+}
